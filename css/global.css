@@ -1,0 +1,18 @@
+/*
+60 of #87CEEB
+30 of #d687eb
+10 of #eba487
+*/
+
+:root {
+
+    /* var(--primaryColor) */
+    --primaryColor:#87CEEB;
+
+    /* var(--secondaryColor) */
+    --secondaryColor:#d687eb;
+
+    /* var(--accentColor) */
+    --accentColor:#eba487;
+
+}
