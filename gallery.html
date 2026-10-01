@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pexels Media Gallery</title>
+    <style>
+        body { font-family: sans-serif; background-color: #121212; color: #fff; margin: 0; padding: 40px; }
+        h1, h2 { color: #00ffcc; border-bottom: 2px solid #333; padding-bottom: 10px; }
+        
+        /* Grid Layouts */
+        .grid-landscape { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-bottom: 50px; }
+        .grid-portrait { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+        
+        /* Image Cards */
+        .card { background: #1e1e1e; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.5); }
+        .card img { width: 100%; height: auto; display: block; object-fit: cover; }
+        .card-landscape img { aspect-ratio: 16 / 9; }
+        .card-portrait img { aspect-ratio: 2 / 3; }
+        .info { padding: 15px; font-size: 14px; color: #ccc; }
+    </style>
+</head>
+<body>
+
+    <h1 id="gallery-title">Loading Gallery...</h1>
+
+    <h2>Horizontal Landscapes (5)</h2>
+    <div id="landscape-container" class="grid-landscape"></div>
+
+    <h2>Vertical Portraits (5)</h2>
+    <div id="portrait-container" class="grid-portrait"></div>
+
+    <script>
+        // Fetch your imaging.json file dynamically
+        fetch('./imaging.json')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('gallery-title').innerText = data.gallery_name || "My Pexels Gallery";
+
+                // Render Landscape Images
+                const landscapeContainer = document.getElementById('landscape-container');
+                data.horizontal_images.forEach(img => {
+                    landscapeContainer.innerHTML += `
+                        <div class="card card-landscape">
+                            <img src="${img.local_path}" alt="${img.description}">
+                            <div class="info">${img.description}</div>
+                        </div>
+                    `;
+                });
+
+                // Render Portrait Images
+                const portraitContainer = document.getElementById('portrait-container');
+                data.vertical_images.forEach(img => {
+                    portraitContainer.innerHTML += `
+                        <div class="card card-portrait">
+                            <img src="${img.local_path}" alt="${img.description}">
+                            <div class="info">${img.description}</div>
+                        </div>
+                    `;
+                });
+            })
+            .catch(error => console.error("Error loading JSON file maps:", error));
+    </script>
+</body>
+</html>
