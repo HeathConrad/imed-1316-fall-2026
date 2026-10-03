@@ -1,0 +1,67 @@
+{
+    "gallery_name": "Pixels Media Collections",
+    "horizontal_images": [
+        {
+            "id": "Pexels Image #1",
+            "aspect_ratio": "landscape",
+            "local_path": "./assets/horizontal/land_1.jpg",
+            "description": "Group of People planning"
+        },
+        {
+            "id": "Pexels Image #2",
+            "aspect_ratio": "landscape",
+            "local_path": "./assets/horizontal/land_2.jpg",
+            "description": "Two people on computers and people surrounding looking"
+        },
+        {
+            "id": "Pexels Image #5",
+            "aspect_ratio": "landscape",
+            "local_path": "./assets/horizontal/land_5.jpg",
+            "description": "Two girls on computer"
+        },
+        {
+            "id": "Pexels Horizontal Image",
+            "aspect_ratio": "landscape",
+            "local_path": "./assets/horizontal/land_4.jpg",
+            "description": "girl planning and writing things"    
+        },
+        {
+            "id": "Pexels Horizontal Image (2)",
+            "aspect_ratio": "landscape",
+            "local_path": "./assets/horizontal/land_3.jpg",
+            "description": "Girl using sticky notes with computer"
+        }
+    ],
+    "vertical_images": [
+        {
+            "id": "Pexels Image #3",
+            "aspect_ratio": "portrait",
+            "local_path": "./assets/vertical/port_5.jpg",
+            "description": "Girl on computer doing research"
+        },
+        {
+            "id": "Pexels Vertical Image (2)",
+            "aspect_ratio": "portrait",
+            "local_path": "./assets/vertical/port_2.jpg",
+            "description": "Pencil and Papers"
+        },
+        {
+            "id": "Pexels Vertical Image",
+            "aspect_ratio": "portrait",
+            "local_path": "./assets/vertical/port_1.jpg",
+            "description": "A person holding notebook"
+        },
+        {
+            "id": "Pexels Vertical Image (4)",
+            "aspect_ratio": "portrait",
+            "local_path": "./assets/vertical/port_4.jpg",
+            "description": "a notebook called 'Let's Do This'"
+        },
+        {
+            "id":"Pexels Vertical Image (3)",
+            "aspect_ratio": "portrait",
+            "local_path": "./assets/vertical/port_3.jpg",
+            "description": "supplies with a calendar and a notebook for planning"
+        }
+    ]
+}
