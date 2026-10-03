@@ -9,9 +9,9 @@ body {
 }
 
 
-.googlesansflex-imed {
-font-family: "Google Sans Flex", sans-serif;
+.clarity-city-imed> {
+  font-family: "Clarity City", sans-serif;
   font-optical-sizing: auto;
-  font-weight: bold;
+  font-weight: bolder;
   font-style: normal;
 }
