@@ -1,21 +1,21 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 @import url('global.css');
 
 body {
     background-color: peachpuff;
-    color: #fff;
+    color: royalblue;
 }
 
 
 .font-awesome-icons {
-  background-color: var(--Background-Color);
+  background-color: peachpuff;
 }
 
 
-.clarity-city-imed {
-  font-family: "Clarity City", sans-serif;
+.montserrat-imed {
+  font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: bold;
   font-style: normal;
