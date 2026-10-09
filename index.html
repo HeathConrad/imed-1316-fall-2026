@@ -4,122 +4,147 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yearbook Theme Studio</title>
-
-    <!-- Google Fonts & Bootstrap/Icons CDNs -->
-    <link rel="preconnect" href="https://googleapis.com">
-    <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https://googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://jsdelivr.net">
-    <link rel="stylesheet" href="https://jsdelivr.net">
+    
+    <!-- styles.css link -->
     <link rel="stylesheet" href="styles.css">
     
+    <!-- Custom Style Layer for Theme Tweak Overrides -->
     <style>
-        body { font-family: 'Figtree', sans-serif; padding-bottom: 75px; }
-        .hero-section { background-color: #f8f9fa; border-bottom: 1px solid #dee2e6; }
-        .gallery-img { height: 200px; object-fit: cover; width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.2s ease; }
-        .gallery-img:hover { transform: translateY(-4px); }
-        .grid-demo-box { background-color: #e9ecef; padding: 20px 15px; border-radius: 6px; font-weight: 600; color: #495057; border: 1px solid #dee2e6; }
-        .bottom-nav { position: fixed; bottom: 0; width: 100%; z-index: 1030; }
+        .hero-section {
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .gallery-img {
+            height: 200px;
+            object-fit: cover;
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease;
+        }
+        .gallery-img:hover {
+            transform: translateY(-4px);
+        }
+        .grid-demo-box {
+            background-color: #e9ecef;
+            padding: 15px;
+            border-radius: 6px;
+            font-weight: 500;
+            color: #495057;
+        }
     </style>
 </head>
-<body class="d-flex flex-column min-vh-100">
+<body>
 
-    <!-- Top Navigation with Search Bar -->
-    <header class="sticky-top">
+    <!-- Professional Navigation Bar -->
+    <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
             <div class="container">
-                <a class="navbar-brand fw-bold text-white d-flex align-items-center gap-2" href="#">
-                    <i class="bi bi-journal-album text-primary"></i> Yearbook Theme Studio
+                <a class="navbar-brand fw-bold tracking-tight text-white" href="#">
+                    Yearbook Theme Studio
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <!-- Inline Search Bar -->
-                    <form class="d-flex mx-lg-auto my-2 my-lg-0 order-2 order-lg-1" style="max-width: 400px; width: 100%;" role="search">
-                        <div class="input-group">
-                            <input class="form-control form-control-sm bg-secondary text-white border-0" type="search" placeholder="Search themes..." aria-label="Search">
-                            <button class="btn btn-sm btn-primary" type="submit"><i class="bi bi-search"></i></button>
-                        </div>
-                    </form>
-                    
-                    <ul class="navbar-nav ms-auto gap-2 order-1 order-lg-2">
-                        <li class="nav-item"><a class="nav-link active" href="#"><i class="bi bi-house-door"></i> Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-grid-3x3-gap"></i> Browse Templates</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-info-circle"></i> About Us</a></li>
-                        <li class="nav-item ms-lg-2"><a class="btn btn-primary text-white btn-sm px-3 mt-1 mt-lg-0" href="#"><i class="bi bi-cart"></i> Order Your Yearbook</a></li>
+                    <ul class="navbar-nav ms-auto gap-2">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Browse Templates</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item ms-lg-2">
+                            <a class="btn btn-primary text-white px-3" href="#">Order Your Yearbook</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
 
+    <!-- Professional Clean Hero Section Header -->
     <section class="hero-section py-5 text-center">
         <div class="container py-3">
             <h1 class="display-4 fw-bold text-dark mb-3">Start YOUR Design</h1>
             <p class="lead text-muted mx-auto" style="max-width: 700px;">
-                Browse hundreds of Yearbook themes tailored to your school or create your own from scratch, courtesy of YBS! Completely free with no contracts or fees.
+                Browse a collection of hundreds of Yearbook themes tailored to your school or make your own theme from scratch, courtesy of YBS! With no contracts or fees, it's completely free.
             </p>
+            <div class="d-flex justify-content-center gap-3 mt-4">
+                <button class="btn btn-primary btn-lg px-4">Get Started</button>
+                <button class="btn btn-outline-secondary btn-lg px-4">Learn More</button>
+            </div>
         </div>
     </section>
 
-    <!-- Main Gallery & Features -->
+    <!-- Refactored Clean Image Presentation Gallery System -->
     <main class="container my-5">
         <h2 class="text-center fw-bold mb-4">Coordinating Backgrounds &amp; Theme Concepts</h2>
         <div class="row g-4 justify-content-center mb-5">
             <div class="col-sm-6 col-md-3">
-                <img class="gallery-img" src="https://brandpacks.com" alt="Yearbook Template">
+                <img class="gallery-img" src="https://brandpacks.com/wp-content/uploads/edd/2025/02/school-yearbook-template-canva-indd-idml-00-1536x1025.jpg" alt="Yearbook Template">
             </div>
             <div class="col-sm-6 col-md-3">
-                <img class="gallery-img" src="https://friesens.com" alt="Yearbook Spread">
+                <img class="gallery-img" src="https://www.friesens.com/wp-content/uploads/2025/11/xspread6-1536x994.jpg.pagespeed.ic.6aNOvLSmMm.webp" alt="Yearbook Spread">
             </div>
             <div class="col-sm-6 col-md-3">
-                <img class="gallery-img" src="https://memorybook.com" alt="Yearbook Theme">
+                <img class="gallery-img" src="https://www.memorybook.com/yearbook-design/yearbook-theme-concepts/coordinating-backgrounds/26-27-themes/neonrush.jpg" alt="Yearbook Theme">
             </div>
             <div class="col-sm-6 col-md-3">
-                <img class="gallery-img" src="https://cloudfront.net" alt="Yearbook Cover">
+                <img class="gallery-img" src="https://d180cn8r63uqsc.cloudfront.net/P07/364698460.1_-" alt="Yearbook Cover">
             </div>
         </div>
 
+        <!-- Corrected Clean 12-Grid System Implementation -->
         <section class="my-5">
             <h3 class="fw-semibold mb-4 text-center">Our Studio Features</h3>
             <div class="row g-3 text-center">
-                <div class="col-6 col-md-4 col-lg-2"><div class="grid-demo-box"><i class="bi bi-palette d-block fs-3 mb-2 text-primary"></i> Column One</div></div>
-                <div class="col-6 col-md-4 col-lg-2"><div class="grid-demo-box"><i class="bi bi-fonts d-block fs-3 mb-2 text-primary"></i> Column Two</div></div>
-                <div class="col-6 col-md-4 col-lg-2"><div class="grid-demo-box"><i class="bi bi-images d-block fs-3 mb-2 text-primary"></i> Column Three</div></div>
-                <div class="col-6 col-md-4 col-lg-2"><div class="grid-demo-box"><i class="bi bi-lightning d-block fs-3 mb-2 text-primary"></i> Column Four</div></div>
-                <div class="col-6 col-md-4 col-lg-2"><div class="grid-demo-box"><i class="bi bi-cloud-arrow-up d-block fs-3 mb-2 text-primary"></i> Column Five</div></div>
-                <div class="col-6 col-md-4 col-lg-2"><div class="grid-demo-box"><i class="bi bi-people d-block fs-3 mb-2 text-primary"></i> Column Six</div></div>
+                <!-- Cleaned responsive classes down to concise, functional breakpoints -->
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="grid-demo-box">Column One</div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="grid-demo-box">Column Two</div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="grid-demo-box">Column Three</div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="grid-demo-box">Column Four</div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="grid-demo-box">Column Five</div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="grid-demo-box">Column Six</div>
+                </div>
             </div>
         </section>
+
+        <!-- Brand Motto Highlight Panel -->
+        <div class="proxima-nova-imed">
+        <p>Browse our Yearbook Themes or customize one for yourself, and with no contracts or fees, it's completely free!</p>
+         <p>This is Yearbook Theme Studio. Make a Difference, Discover your Passion.</p>
+         </div>
     </main>
 
-    <!-- Footer & Utilities with Social Media Links -->
+    <!-- Professional Site Footer -->
     <footer class="bg-dark text-light py-4 mt-auto border-top border-secondary">
-        <div class="container text-center"><p class="mb-0 small text-muted">&copy; 2026 Yearbook Theme Studio. All rights reserved.</p></div>
-    </footer>
-
-    <!-- Bottom Utility Navbar with Instagram and YouTube -->
-    <nav class="navbar bottom-nav navbar-dark bg-dark border-top border-secondary py-2 shadow-lg">
-        <div class="container d-flex justify-content-around align-items-center">
-            <a href="#" class="nav-link text-white-50 text-center small"><i class="bi bi-telephone d-block fs-5 text-light"></i> Support</a>
-            <a href="#" class="nav-link text-white-50 text-center small"><i class="bi bi-shield-lock d-block fs-5 text-light"></i> Privacy</a>
-            <a href="#" class="nav-link text-white-50 text-center small"><i class="bi bi-file-earmark-text d-block fs-5 text-light"></i> Terms</a>
-            
-            <!-- Social Divider for layout separation -->
-            <div class="vr text-secondary d-none d-sm-block" style="height: 30px;"></div>
-            
-            <!-- Social Links Requested -->
-            <a href="https://instagram.com" target="_blank" rel="noopener" class="nav-link text-white-50 text-center small">
-                <i class="bi bi-instagram d-block fs-5 text-danger"></i> Instagram
-            </a>
-            <a href="https://youtube.com" target="_blank" rel="noopener" class="nav-link text-white-50 text-center small">
-                <i class="bi bi-youtube d-block fs-5 text-danger"></i> YouTube
-            </a>
+        <div class="container text-center">
+            <p class="mb-0 small text-muted">&copy; 2026 Yearbook Theme Studio. All rights reserved.</p>
         </div>
-    </nav>
+    </footer>
     
+    <!-- Bootstrap CDN JavaScript Bundle Bundle (Handles mobile toggle menu click actions cleanly) -->    
     <script src="https://jsdelivr.net"></script>
+
+    <!-- Project Local App Scripts File Layer link -->
     <script src="js/scripts.js"></script>
 </body>
 </html>
