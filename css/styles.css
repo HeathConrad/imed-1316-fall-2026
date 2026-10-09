@@ -1,17 +1,117 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
-
-
 @import url('global.css');
 
 body {
-    background-color: peachpuff;
-    color: royalblue;
+    font-family: 'Figtree', sans-serif;
+    background-color: peachpuff; /* Preserved Custom Theme Background */
+    color: royalblue;           /* Preserved Custom Theme Accent Text */
+    padding-bottom: 95px;       /* Offset spacing to prevent fixed bottom nav occlusion */
+    min-height: 100vh;
 }
 
+/* Explicit class handling for custom element states */
 .figtree-imed {
-  font-family: 'Figtree', sans-serif;
-  font-optical-sizing: auto;
-  font-weight: bold;
-  font-style: normal;
+    font-family: 'Figtree', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* ==========================================================================
+   2. Sticky Header & Search Bar Setup
+   ========================================================================== */
+.navbar-brand {
+    letter-spacing: -0.025em;
+}
+
+/* Make search inputs look sleek inside the navigation headers */
+header .form-control {
+    font-size: 0.875rem;
+    border-radius: 4px 0 0 4px;
+    transition: all 0.2s ease-in-out;
+}
+
+header .form-control:focus {
+    background-color: #343a40 !important;
+    box-shadow: none;
+    color: #ffffff !important;
+}
+
+.nav-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* ==========================================================================
+   3. Card Layout Components & Presentations
+   ========================================================================== */
+.gallery-img {
+    height: 220px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s ease;
+}
+
+.gallery-img:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+.grid-demo-box {
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(4px);
+    padding: 24px 16px;
+    border-radius: 8px;
+    font-weight: 700;
+    color: royalblue;
+    border: 1px solid rgba(65, 105, 225, 0.3);
+    transition: all 0.2s ease;
+}
+
+.grid-demo-box:hover {
+    background-color: royalblue;
+    color: peachpuff;
+    border-color: royalblue;
+}
+
+/* ==========================================================================
+   4. Fixed Bottom Utility Navbar System & Social Components
+   ========================================================================== */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1030;
+    background-color: #212529;
+    border-top: 1px solid #343a40;
+}
+
+.bottom-nav .nav-link {
+    flex-direction: column;
+    gap: 2px;
+    padding: 4px 12px;
+    color: #adb5bd !important;
+}
+
+.bottom-nav .nav-link:hover {
+    color: #ffffff !important;
+}
+
+/* Social Icon Hover Highlight States */
+.bottom-nav .nav-link:hover .bi-instagram {
+    color: #e1306c !important;
+}
+
+.bottom-nav .nav-link:hover .bi-youtube {
+    color: #ff0000 !important;
+}
+
+.vr {
+    background-color: #495057;
+    opacity: 0.6;
 }
