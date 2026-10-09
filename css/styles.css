@@ -5,7 +5,7 @@
 body {
     background-color: peachpuff;
     color: royalblue;
-    font-family: "proxima-nova", sans-serif;
+    font-family: 'proxima-nova', sans-serif;
 }
 
 .font-awesome-icons {
@@ -13,7 +13,7 @@ body {
 }
 
 .proxima-nova-imed {
-    font-family: "proxima-nova", sans-serif;
+    font-family: 'proxima-nova', sans-serif;
     font-weight: 700;
     font-style: normal;
 }
