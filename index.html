@@ -24,7 +24,7 @@
 </head>
 <body class="d-flex flex-column min-vh-100">
 
-    <!-- Navigation -->
+    <!-- Navigation & Hero -->
     <header class="sticky-top">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
             <div class="container">
@@ -36,22 +36,21 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto gap-2">
-                        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Browse Templates</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-                        <li class="nav-item ms-lg-2"><a class="btn btn-primary text-white px-3" href="#">Order Your Yearbook</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#"><i class="bi bi-house-door"></i> Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-grid-3x3-gap"></i> Browse Templates</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-info-circle"></i> About Us</a></li>
+                        <li class="nav-item ms-lg-2"><a class="btn btn-primary text-white px-3" href="#"><i class="bi bi-cart"></i> Order Your Yearbook</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero-section py-5 text-center">
         <div class="container py-3">
             <h1 class="display-4 fw-bold text-dark mb-3">Start YOUR Design</h1>
             <p class="lead text-muted mx-auto" style="max-width: 700px;">
-                Browse hundreds of Yearbook themes or make your own from scratch. Completely free with no contracts or fees!
+                Browse hundreds of Yearbook themes tailored to your school or create your own from scratch, courtesy of YBS! Completely free with no contracts or fees.
             </p>
         </div>
     </section>
@@ -60,18 +59,39 @@
     <main class="container my-5">
         <h2 class="text-center fw-bold mb-4">Coordinating Backgrounds &amp; Theme Concepts</h2>
         <div class="row g-4 justify-content-center mb-5">
-            <div class="col-sm-6 col-md-3"><img class="gallery-img" src="https://brandpacks.com" alt="Template"></div>
-            <div class="col-sm-6 col-md-3"><img class="gallery-img" src="https://friesens.com" alt="Spread"></div>
-            <div class="col-sm-6 col-md-3"><img class="gallery-img" src="https://memorybook.com" alt="Theme"></div>
-            <div class="col-sm-6 col-md-3"><img class="gallery-img" src="https://cloudfront.net" alt="Cover"></div>
+            <div class="col-sm-6 col-md-3"><img class="gallery-img" src="https://brandpacks.com" alt="Yearbook Template"></div>
+            <div class="col-sm-6 col-md-3"><img class="gallery-img" src="https://friesens.com" alt="Yearbook Spread"></div>
+            <div class="col-sm-6 col-md-3"><img class="gallery-img" src="https://memorybook.com" alt="Yearbook Theme"></div>
+            <div class="col-sm-6 col-md-3"><img class="gallery-img" src="https://cloudfront.net" alt="Yearbook Cover"></div>
         </div>
+
+        <section class="my-5">
+            <h3 class="fw-semibold mb-4 text-center">Our Studio Features</h3>
+            <div class="row g-3 text-center">
+                <div class="col-6 col-md-4 col-lg-2"><div class="grid-demo-box"><i class="bi bi-palette d-block fs-3 mb-2 text-primary"></i> Column One</div></div>
+                <div class="col-6 col-md-4 col-lg-2"><div class="grid-demo-box"><i class="bi bi-fonts d-block fs-3 mb-2 text-primary"></i> Column Two</div></div>
+                <div class="col-6 col-md-4 col-lg-2"><div class="grid-demo-box"><i class="bi bi-images d-block fs-3 mb-2 text-primary"></i> Column Three</div></div>
+                <div class="col-6 col-md-4 col-lg-2"><div class="grid-demo-box"><i class="bi bi-lightning d-block fs-3 mb-2 text-primary"></i> Column Four</div></div>
+                <div class="col-6 col-md-4 col-lg-2"><div class="grid-demo-box"><i class="bi bi-cloud-arrow-up d-block fs-3 mb-2 text-primary"></i> Column Five</div></div>
+                <div class="col-6 col-md-4 col-lg-2"><div class="grid-demo-box"><i class="bi bi-people d-block fs-3 mb-2 text-primary"></i> Column Six</div></div>
+            </div>
+        </section>
     </main>
 
-    <!-- Footer & Navigation -->
+    <!-- Footer & Utilities -->
     <footer class="bg-dark text-light py-4 mt-auto border-top border-secondary">
         <div class="container text-center"><p class="mb-0 small text-muted">&copy; 2026 Yearbook Theme Studio. All rights reserved.</p></div>
     </footer>
+
+    <nav class="navbar bottom-nav navbar-dark bg-dark border-top border-secondary py-2 shadow-lg">
+        <div class="container d-flex justify-content-around">
+            <a href="#" class="nav-link text-white-50 text-center small"><i class="bi bi-telephone d-block fs-5 text-light"></i> Support</a>
+            <a href="#" class="nav-link text-white-50 text-center small"><i class="bi bi-shield-lock d-block fs-5 text-light"></i> Privacy</a>
+            <a href="#" class="nav-link text-white-50 text-center small"><i class="bi bi-file-earmark-text d-block fs-5 text-light"></i> Terms</a>
+        </div>
+    </nav>
     
+    <script src="https://jsdelivr.net"></script>
     <script src="js/scripts.js"></script>
 </body>
 </html>
