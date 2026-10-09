@@ -3,152 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Google Fonts -->
-     <div class="figtree-imed">
-        <p> Design Themes, Make Memories, Customize from Scratch</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem omnis facilis, repudiandae, deleniti dolore quas adipisci non ipsa reprehenderit natus architecto explicabo aspernatur rem numquam. Hic aut quis consequatur a?</p>
     <title>Yearbook Theme Studio</title>
-    
-    <!-- Bootstrap CSS -->
+
+    <!-- Google Fonts & Bootstrap/Icons CDNs -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://jsdelivr.net">
-    
-    <!-- styles.css link -->
+    <link rel="stylesheet" href="https://jsdelivr.net">
     <link rel="stylesheet" href="styles.css">
     
-    <!-- Custom Style Layer for Theme Tweak Overrides -->
     <style>
-        .hero-section {
-            background-color: #f8f9fa;
-            border-bottom: 1px solid #dee2e6;
-        }
-        .gallery-img {
-            height: 200px;
-            object-fit: cover;
-            width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            transition: transform 0.2s ease;
-        }
-        .gallery-img:hover {
-            transform: translateY(-4px);
-        }
-        .grid-demo-box {
-            background-color: #e9ecef;
-            padding: 15px;
-            border-radius: 6px;
-            font-weight: 500;
-            color: #495057;
-        }
+        body { font-family: 'Figtree', sans-serif; padding-bottom: 75px; }
+        .hero-section { background-color: #f8f9fa; border-bottom: 1px solid #dee2e6; }
+        .gallery-img { height: 200px; object-fit: cover; width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.2s ease; }
+        .gallery-img:hover { transform: translateY(-4px); }
+        .grid-demo-box { background-color: #e9ecef; padding: 20px 15px; border-radius: 6px; font-weight: 600; color: #495057; border: 1px solid #dee2e6; }
+        .bottom-nav { position: fixed; bottom: 0; width: 100%; z-index: 1030; }
     </style>
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
 
-    <!-- Professional Navigation Bar -->
-    <header>
+    <!-- Navigation -->
+    <header class="sticky-top">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
             <div class="container">
-                <a class="navbar-brand fw-bold tracking-tight text-white" href="#">
-                    Yearbook Theme Studio
+                <a class="navbar-brand fw-bold text-white d-flex align-items-center gap-2" href="#">
+                    <i class="bi bi-journal-album text-primary"></i> Yearbook Theme Studio
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto gap-2">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Browse Templates</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
-                        </li>
-                        <li class="nav-item ms-lg-2">
-                            <a class="btn btn-primary text-white px-3" href="#">Order Your Yearbook</a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Browse Templates</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                        <li class="nav-item ms-lg-2"><a class="btn btn-primary text-white px-3" href="#">Order Your Yearbook</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
 
-    <!-- Professional Clean Hero Section Header -->
+    <!-- Hero Section -->
     <section class="hero-section py-5 text-center">
         <div class="container py-3">
             <h1 class="display-4 fw-bold text-dark mb-3">Start YOUR Design</h1>
             <p class="lead text-muted mx-auto" style="max-width: 700px;">
-                Browse a collection of hundreds of Yearbook themes tailored to your school or make your own theme from scratch, courtesy of YBS! With no contracts or fees, it's completely free.
+                Browse hundreds of Yearbook themes or make your own from scratch. Completely free with no contracts or fees!
             </p>
-            <div class="d-flex justify-content-center gap-3 mt-4">
-                <button class="btn btn-primary btn-lg px-4">Get Started</button>
-                <button class="btn btn-outline-secondary btn-lg px-4">Learn More</button>
-            </div>
         </div>
     </section>
 
-    <!-- Refactored Clean Image Presentation Gallery System -->
+    <!-- Main Gallery & Features -->
     <main class="container my-5">
         <h2 class="text-center fw-bold mb-4">Coordinating Backgrounds &amp; Theme Concepts</h2>
         <div class="row g-4 justify-content-center mb-5">
-            <div class="col-sm-6 col-md-3">
-                <img class="gallery-img" src="https://brandpacks.com/wp-content/uploads/edd/2025/02/school-yearbook-template-canva-indd-idml-00-1536x1025.jpg" alt="Yearbook Template">
-            </div>
-            <div class="col-sm-6 col-md-3">
-                <img class="gallery-img" src="https://www.friesens.com/wp-content/uploads/2025/11/xspread6-1536x994.jpg.pagespeed.ic.6aNOvLSmMm.webp" alt="Yearbook Spread">
-            </div>
-            <div class="col-sm-6 col-md-3">
-                <img class="gallery-img" src="https://www.memorybook.com/yearbook-design/yearbook-theme-concepts/coordinating-backgrounds/26-27-themes/neonrush.jpg" alt="Yearbook Theme">
-            </div>
-            <div class="col-sm-6 col-md-3">
-                <img class="gallery-img" src="https://d180cn8r63uqsc.cloudfront.net/P07/364698460.1_-" alt="Yearbook Cover">
-            </div>
+            <div class="col-sm-6 col-md-3"><img class="gallery-img" src="https://brandpacks.com" alt="Template"></div>
+            <div class="col-sm-6 col-md-3"><img class="gallery-img" src="https://friesens.com" alt="Spread"></div>
+            <div class="col-sm-6 col-md-3"><img class="gallery-img" src="https://memorybook.com" alt="Theme"></div>
+            <div class="col-sm-6 col-md-3"><img class="gallery-img" src="https://cloudfront.net" alt="Cover"></div>
         </div>
-
-        <!-- Corrected Clean 12-Grid System Implementation -->
-        <section class="my-5">
-            <h3 class="fw-semibold mb-4 text-center">Our Studio Features</h3>
-            <div class="row g-3 text-center">
-                <!-- Cleaned responsive classes down to concise, functional breakpoints -->
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="grid-demo-box">Column One</div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="grid-demo-box">Column Two</div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="grid-demo-box">Column Three</div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="grid-demo-box">Column Four</div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="grid-demo-box">Column Five</div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="grid-demo-box">Column Six</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Brand Motto Highlight Panel -->
-        <p>Browse our Yearbook Themes or customize one for yourself, and with no contracts or fees, it's completely free!</p>
-         <p>This is Yearbook Theme Studio. Make a Difference, Discover your Passion.</p>
-         </div>
     </main>
 
-    <!-- Professional Site Footer -->
+    <!-- Footer & Navigation -->
     <footer class="bg-dark text-light py-4 mt-auto border-top border-secondary">
-        <div class="container text-center">
-            <p class="mb-0 small text-muted">&copy; 2026 Yearbook Theme Studio. All rights reserved.</p>
-        </div>
+        <div class="container text-center"><p class="mb-0 small text-muted">&copy; 2026 Yearbook Theme Studio. All rights reserved.</p></div>
     </footer>
     
-    <!-- Bootstrap CDN JavaScript Bundle Bundle (Handles mobile toggle menu click actions cleanly) -->    
-    <script src="https://jsdelivr.net"></script>
-
-    <!-- Project Local App Scripts File Layer link -->
     <script src="js/scripts.js"></script>
-    <!-- End Google Fonts -->
 </body>
 </html>
