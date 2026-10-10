@@ -1,19 +1,20 @@
-@import url("https://use.typekit.net/grg4xus.css");
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
 @import url('global.css');
 
 body {
     background-color: peachpuff;
     color: royalblue;
-    font-family: 'proxima-nova', sans-serif;
+    font-family: 'figtree', sans-serif;
 }
 
 .font-awesome-icons {
     background-color: peachpuff;
 }
 
-.proxima-nova-imed {
-    font-family: 'proxima-nova', sans-serif;
-    font-weight: 700;
-    font-style: normal;
+.figtree-imed {
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
 }
