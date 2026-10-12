@@ -1,0 +1,18 @@
+/*
+60 of #DACEC4
+30 of #c5dac4
+10 of #cec4da
+*/
+
+:root {
+
+/* var(--primaryColor) */
+--primaryColor: #DACEC4;
+
+/* var(--secondaryColor) */
+--secondaryColor: #c5dac4;
+
+/* var(--accentColor) */
+--accentColor: #cec4da;
+
+}

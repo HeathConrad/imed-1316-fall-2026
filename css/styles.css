@@ -1,3 +1,7 @@
+
+@import url('global.css');
+
 body {
-    background-color: #DACEC4;
+    background-color: var(--primaryColor);
+    color: #000000  
 }
