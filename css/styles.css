@@ -10,7 +10,7 @@ body {
 
 .font-awesome-icons {
     background-color: var(--primaryColor);
-    padding: 25px
+    padding: 25px;
 }
 
 .font-awesome-icons i {
@@ -27,6 +27,11 @@ body {
 
 .p-one {
     color:#000000
+}
+
+.fa-footer{
+    background-color: var(--primaryColor);
+    padding: 25px;
 }
 
 .fa-footer {
