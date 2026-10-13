@@ -7,3 +7,12 @@ body {
     background-color: var(--primaryColor);
     color: #000000  
 }
+
+
+
+.dm-sans-imed {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
