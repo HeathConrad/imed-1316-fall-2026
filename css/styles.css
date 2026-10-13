@@ -19,12 +19,17 @@ body {
 
 
 .dm-sans-imed {
-  font-family: "DM Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: bold;
-  font-style: normal;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
 }
 
 .p-one {
     color:#000000
+}
+
+.fa-footer {
+    color: #fff;
+    font-size: 25px;
 }
