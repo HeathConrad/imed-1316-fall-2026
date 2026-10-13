@@ -9,7 +9,7 @@ body {
 }
 
 .font-awesome-icons {
-    background-color: var(#000000);
+    background-color: var(primaryColor);
     padding: 25px
 }
 
