@@ -4,12 +4,12 @@
 @import url('global.css');
 
 body {
-
-    color: #000000  
+    background-color: #DACEC4;
+    color: #000  
 }
 
 .font-awesome-icons {
-    background-color: var(--primaryColor);
+    background-color: var(#3300ff);
     padding: 25px
 }
 
