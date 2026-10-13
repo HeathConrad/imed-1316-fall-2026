@@ -29,8 +29,9 @@ body {
     color:#000000;
     line-height: 1.2;
     padding: 15px;
-    border: 2px solid #c5dac4;
+    /*border: 2px solid #c5dac4;*/
     margin: 15px;
+    text-align: center;
 }
 
 .fa-footer{
