@@ -36,7 +36,7 @@ body {
 }
 
 .fa-footer{
-    background-color: var(--primaryColor);
+    background-color: var(--secondaryColor);
     padding: 25px;
 }
 
