@@ -4,12 +4,12 @@
 @import url('global.css');
 
 body {
-    
+    background-color:#DACEC4;
     color: #fff
 }
 
 .font-awesome-icons {
-    background-color: var(--primaryColor);
+    background-color: var(--secondaryColor);
     padding: 25px;
 }
 
@@ -26,7 +26,7 @@ body {
 }
 
 .p-one {
-    color:#000000;
+    color:#fff;
     line-height: 1.2;
     padding: 15px;
     /*border: 2px solid #c5dac4;*/
