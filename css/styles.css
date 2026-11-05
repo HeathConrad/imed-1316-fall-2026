@@ -1,15 +1,15 @@
-
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 @import url('global.css');
 
 body {
-    background-color:#DACEC4;
-    color: #fff
+
+    color: #fff;
 }
 
+
 .font-awesome-icons {
-    background-color: var(--secondaryColor);
+    background-color: var(--primaryColor);
     padding: 25px;
 }
 
@@ -18,30 +18,31 @@ body {
 }
 
 
-.dm-sans-imed {
-    font-family: "DM Sans", sans-serif;
+.montserrat-imed {
+    font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: bold;
     font-style: normal;
 }
 
 .p-one {
-    color:#fff;
+    color: #000;
     line-height: 1.2;
     padding: 15px;
-    /*border: 2px solid #c5dac4;*/
+    /*border: 2px solid red;*/
     margin-top: 15px;
     margin-bottom: 15px;
     text-align: center;
 }
 
-.fa-footer{
-    background-color: var(--secondaryColor);
+
+.fa-footer {
+    background-color: var(--primaryColor);
     padding: 25px;
 }
 
 .fa-footer i {
-    color: #c5dac4;
+    color: #fff;
     font-size: 25px;
     margin: 15px;
 }
