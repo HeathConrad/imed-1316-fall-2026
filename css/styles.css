@@ -1,52 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'global.css';
+@import 'main.css';
 
-@import url('global.css');
 
-body {
+.carousel-caption {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000000 !important;
+  }
+  
 
-    color: #fff;
+p {
+    font-family: var(--fontFamily) !important;
 }
 
-
-.font-awesome-icons {
-    background-color: var(--primaryColor);
-    padding: 25px;
-}
-
-.font-awesome-icons i {
+.blinn-fa-icon {
     font-size: 60px;
+    color: #ffffff;
 }
 
 
-.montserrat-imed {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: bold;
-    font-style: normal;
+
+.blinn-fa-icon:hover {
+    transform: scale(1.1);
+  }
+  
+
+
+.blinn-fa-container a {
+    color: #ffffff !important;
 }
 
-.p-one {
-    color: #000;
-    line-height: 1.2;
-    padding: 15px;
-    /*border: 2px solid red;*/
-    margin-top: 15px;
-    margin-bottom: 15px;
-    text-align: center;
+.blinn-fa-container {
+    background-color: var(--secondaryColor) !important;
+    padding: 50px;
 }
 
-
-.fa-footer {
-    background-color: var(--primaryColor);
-    padding: 25px;
+.paragraph-one {
+    position: relative;
+    top: 30px;
 }
 
-.fa-footer i {
-    color: #fff;
-    font-size: 25px;
-    margin: 15px;
-}
-
-.imed-img {
+.paragraph-one-img {
+    position: relative;
+    float: right;
+    max-width: 350px;
     width: 100%;
+    height: auto;
+    padding-left: 15px;
+}
+
+
+#custom-clip-path {
+    width: 100%;
+    height: 280px;
+    background-color: var(--secondaryColor) !important;
+    clip-path: polygon(0 0, 0 30%, 100% 0);
+    position: relative;
+    margin-top: -5px;
+}
+
+.cropped {
+    width: 250px;
+    height: 250px;
+    margin-top: 15px;
+    border: 10px solid var(--accentColor) !important;
+    border-radius: 50%;
+    clip-path: circle(50% at 50% 50%);
+    
+}
+
+.headshots {
+    position: relative;
+    margin-bottom: 30px;
 }
