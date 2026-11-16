@@ -8,7 +8,7 @@ class Header extends HTMLElement {
     connectedCallback() {
 
 
-        fetch('js/header.html')
+        fetch('header.html')
         .then(response => {
           if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
